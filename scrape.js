@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 const dotenv = require('dotenv');
 
 // read data from .env
-dotenv.config();
+dotenv.config({path: __dirname + '/.env'});
 
 
 let userMail = process.env.userMail;
